@@ -15,10 +15,10 @@ spec:
     metadata:
       labels:
         app: hello-world
-        version: "0.1.11"
+        version: "0.1.12"
     spec:
       containers:
-      - image:  "quay.io/swade1987/hello-world:0.1.11"
+      - image:  "quay.io/swade1987/hello-world:0.1.12"
         name: hello-world
         livenessProbe:
           httpGet:
@@ -36,7 +36,7 @@ spec:
         - name:  NAME
           value:  World
         - name:  VERSION
-          value:  "0.1.11"
+          value:  "0.1.12"
         - name:  MY_POD_NAME
           valueFrom:
             fieldRef:
