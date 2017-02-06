@@ -23,16 +23,21 @@ master:
   expected_count: 1
   nodes:
   - host: master1
-    ip: 138.197.134.117
-  load_balanced_fqdn: 138.197.134.117
-  load_balanced_short_name: 138.197.134.117
+    ip:
+  load_balanced_fqdn:
+  load_balanced_short_name:
 etcd:
   expected_count: 1
   nodes:
   - host: etcd1
-    ip: 138.197.129.185
+    ip:
 worker:
   expected_count: 1
   nodes:
   - host: worker1
-    ip: 138.197.142.236
+    ip:
+ingress:
+  expected_count: 1
+  nodes:
+  - host: ingress1
+    ip:
