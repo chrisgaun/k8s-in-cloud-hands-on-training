@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+ name: kdemo
+spec:
+ rules:
+ - http:
+     paths:
+     - path: /
+       backend:
+         serviceName: kdemo
+         servicePort: 8080
+   host: kdemo.<>.nip.io
