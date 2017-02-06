@@ -13,7 +13,7 @@ variable "digital_ocean_token" {
 # Bangalore - blr1
 variable region {
   description = "Region to launch in"
-  default     = "lon1"
+  default     = "tor1"
 }
 
 variable image {
