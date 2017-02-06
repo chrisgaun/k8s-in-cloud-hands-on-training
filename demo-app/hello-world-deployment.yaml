@@ -5,7 +5,7 @@ metadata:
   labels:
     name: hello-world
 spec:
-  replicas: 5
+  replicas: 2
   strategy:
     rollingUpdate:
       maxSurge: 1
