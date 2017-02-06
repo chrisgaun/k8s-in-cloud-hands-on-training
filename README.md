@@ -69,3 +69,9 @@ To deploy the demo application execute the following command:
 ```
 $ kubectl --kubeconfig kubeconfig apply -f demo-app
 ```
+
+Now execute the following command:
+
+```
+$ while true; do curl http://<worker ip>:<node port>; sleep 1; done;
+```
