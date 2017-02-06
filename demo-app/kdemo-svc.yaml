@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: kdemo
+  labels:
+    name: kdemo
+    visualize: 'true'
+spec:
+  selector:
+    name: kdemo
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+  type: NodePort

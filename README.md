@@ -61,3 +61,11 @@ $ make provision-cluster
 ```
 
 Note: You can specify which version of KET by updating the `KISMATIC_VERSION` variable in the Makefile.
+
+### 3. Deploy the application
+
+To deploy the demo application execute the following command:
+
+```
+$ kubectl --kubeconfig kubeconfig create -f demo-app
+```
