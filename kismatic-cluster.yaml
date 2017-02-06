@@ -36,8 +36,3 @@ worker:
   nodes:
   - host: worker1
     ip:
-ingress:
-  expected_count: 1
-  nodes:
-  - host: ingress1
-    ip:
