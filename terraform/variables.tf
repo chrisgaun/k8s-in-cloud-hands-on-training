@@ -48,7 +48,7 @@ variable worker_count {
 
 variable ingress_count {
   description = "Number of k8s ingress droplets"
-  default     = 0
+  default     = 1
 }
 
 variable storage_count {
