@@ -67,5 +67,5 @@ Note: You can specify which version of KET by updating the `KISMATIC_VERSION` va
 To deploy the demo application execute the following command:
 
 ```
-$ kubectl --kubeconfig kubeconfig create -f demo-app
+$ kubectl --kubeconfig kubeconfig apply -f demo-app
 ```
