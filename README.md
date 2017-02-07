@@ -1,7 +1,5 @@
 # Hands on with Kubernetes Workshops
 
-A demo repo for running the Kismatic Enterprise Toolkit on Digital Ocean
-
 The following repository will create you a Kubernetes cluster using the following:
 
 1. The underlying Infrastructure using Digital Ocean
@@ -15,3 +13,7 @@ A list of prerequisities can be found [here](docs/prerequisities.md)
 ## Create Infrastructure & Provision Cluster
 
 A list of steps to build and provision the Kubernetes cluster can be found [here](docs/build-cluster.md)
+
+## Using Kubernetes
+
+The presenter will go through a list of `kubectl` commands during the workshop.
