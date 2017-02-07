@@ -7,14 +7,14 @@ Before executing Terraform you need to obtain your Digital Ocean token [here](ht
 To see the changes which are going to be made execute the following commands:
 
 ```
-$ export TF_VAR_digital_ocean_token=
+$ export TF_VAR_digital_ocean_token=<your_token>
 $ make plan
 ```
 
 To apply the changes execute the following commands:
 
 ```
-$ export TF_VAR_digital_ocean_token=
+$ export TF_VAR_digital_ocean_token=<your_token>
 $ make apply
 ```
 
