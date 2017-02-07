@@ -50,6 +50,6 @@ $ make provision-cluster
 
 Finally in order to be able to interact with our cluster we need to install Kubectl.
 
-Either execute one of the following commands:
+To install Kubectl execute one of the following commands:
 
 `make get-kubectl-for-mac` or `make get-kubectl-for-linux`
