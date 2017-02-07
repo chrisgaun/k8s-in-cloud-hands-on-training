@@ -20,7 +20,9 @@ $ make apply
 
 ## 2. Provision Kubernetes cluster
 
-To provision the Kubernetes cluster execute one of the following command: `make get-kismatic-for-mac` or `make get-kismatic-for-linux`
+To provision the Kubernetes cluster execute one of the following commands:
+
+`make get-kismatic-for-mac` or `make get-kismatic-for-linux`
 
 Now update the `kismatic-cluster.yaml` in the root directory with the following changes,
 
@@ -38,7 +40,7 @@ master:
 
 Update the remainder of the IP address in the `kismatic-cluster.yaml` under `etcd` and `worker`.
 
-Once you have filled that in execute:
+Once you have filled in the YAML file execute the following command:
 
 ```
 $ make provision-cluster
