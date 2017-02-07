@@ -10,8 +10,8 @@ spec:
     rollingUpdate:
       maxSurge: 1
       maxUnavailable: 1
-      minReadySeconds: 15
     type: RollingUpdate
+  minReadySeconds: 15
   template:
     metadata:
       labels:
