@@ -2,9 +2,9 @@
 
 The following repository will create you a Kubernetes cluster using the following:
 
-1. The underlying Infrastructure using Digital Ocean
-2. Infrastructure creation using Terraform
-3. Cluster provisoning using the Kismatic Enterprise Toolkit [KET](https://github.com/apprenda/kismatic)
+1. Digital Ocean for the underlying infrastructure
+2. Terraform to create the infrastructure
+3. [Kismatic Enterprise Toolkit](https://github.com/apprenda/kismatic) for provisioning our Kubernetes cluster
 
 ## Prerequisities
 
