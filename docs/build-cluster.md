@@ -22,15 +22,7 @@ $ make apply
 
 To provision the Kubernetes cluster **either** execute one of following command:
 
-```
-$ make get-kismatic-for-mac
-```
-
-or
-
-```
-$ make get-kismatic-for-linux
-```
+`make get-kismatic-for-mac` or `make get-kismatic-for-linux`
 
 Now update the `kismatic-cluster.yaml` in the root directory with the following changes,
 
@@ -54,16 +46,10 @@ Once you have filled that in execute:
 $ make provision-cluster
 ```
 
+## 3. Download and install Kubectl
+
 Finally in order to be able to interact with our cluster we need to install Kubectl.
 
 Either execute one of the following commands:
 
-```
-$ make get-kubectl-for-mac
-```
-
-or
-
-```
-$ make get-kubectl-for-linux
-```
+`make get-kubectl-for-mac` or `make get-kubectl-for-linux`
