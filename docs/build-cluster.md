@@ -24,7 +24,11 @@ To provision the Kubernetes cluster execute one of the following commands:
 
 `make get-kismatic-for-mac` or `make get-kismatic-for-linux`
 
-Now update the `kismatic-cluster.yaml` in the root directory with the following changes,
+## 3. Kismatic-cluster.yaml changes
+
+Now update the `kismatic-cluster.yaml` in the root directory with the following changes:
+
+Ensure that the absolute path referred to by `ssh_key` points to the location of the `ssh/cluster.pem` file in your cloned copy of the repository.
 
 Add the IP address of Master1 to `ip`, `load_balanced_fqdn` and `load_balanced_short_name` below
 
@@ -46,7 +50,7 @@ Once you have filled in the YAML file execute the following command:
 $ make provision-cluster
 ```
 
-## 3. Download and install Kubectl
+## 4. Download and install Kubectl
 
 Finally in order to be able to interact with our cluster we need to install Kubectl.
 
