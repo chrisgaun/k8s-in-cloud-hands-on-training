@@ -17,3 +17,7 @@ A list of steps to build and provision the Kubernetes cluster can be found [here
 ## Using Kubernetes
 
 The presenter will go through a list of `kubectl` commands during the workshop.
+
+## Destroying everything once finished.
+
+To clean up your local machine and remove the droplets from Digital Ocean execute `make destroy`
