@@ -6,54 +6,20 @@ Before executing Terraform you need to obtain your Digital Ocean token [here](ht
 
 To see the changes which are going to be made execute the following commands:
 
+Note: You will need to paste in the Digital Ocean Token during the Terraform execution.
+
 ```
-$ export TF_VAR_digital_ocean_token=<your_token>
-$ make plan
+$ cd terraform
+$ terraform plan
 ```
 
 To apply the changes execute the following commands:
 
 ```
-$ export TF_VAR_digital_ocean_token=<your_token>
-$ make apply
+$ cd terraform
+$ terraform apply
 ```
 
-## 2. Provision Kubernetes cluster
+## 2. Provisioning the Kubernetes cluster using Kismatic
 
-To provision the Kubernetes cluster execute one of the following commands:
-
-`make get-kismatic-for-mac` or `make get-kismatic-for-linux`
-
-## 3. Kismatic-cluster.yaml changes
-
-Now update the `kismatic-cluster.yaml` in the root directory with the following changes:
-
-Ensure that the absolute path referred to by `ssh_key` points to the location of the `ssh/cluster.pem` file in your cloned copy of the repository.
-
-Add the IP address of Master1 to `ip`, `load_balanced_fqdn` and `load_balanced_short_name` below
-
-```
-master:
-  expected_count: 1
-  nodes:
-  - host: master1
-    ip:
-  load_balanced_fqdn:
-  load_balanced_short_name:
-```
-
-Update the remainder of the IP address in the `kismatic-cluster.yaml` under `etcd` and `worker`.
-
-Once you have filled in the YAML file execute the following command:
-
-```
-$ make provision-cluster
-```
-
-## 4. Download and install Kubectl
-
-Finally in order to be able to interact with our cluster we need to install Kubectl.
-
-To install Kubectl execute one of the following commands:
-
-`make get-kubectl-for-mac` or `make get-kubectl-for-linux`
+To provision the cluster follow the steps [here](accessing-the-bootstrap-node.md)
