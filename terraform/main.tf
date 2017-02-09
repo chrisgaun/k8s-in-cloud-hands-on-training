@@ -9,6 +9,31 @@ resource "digitalocean_ssh_key" "default" {
   public_key = "${file("${path.module}/../ssh/cluster.pem.pub")}"
 }
 
+# Create the bootstrap node
+resource "digitalocean_droplet" "bootstrap_node" {
+  image              = "${var.image}"
+  name               = "bootstrap-node"
+  region             = "${var.region}"
+  size               = "${var.droplet_size}"
+  ssh_keys           = ["${digitalocean_ssh_key.default.id}"]
+  tags               = ["${digitalocean_tag.cluster_tag.id}"]
+  private_networking = true
+
+  connection {
+    type        = "ssh"
+    private_key = "${file("${path.module}/../ssh/cluster.pem")}"
+    user        = "root"
+    timeout     = "2m"
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      "sudo apt-get -y install git build-essential",
+      "git clone https://github.com/swade1987/hands-on-with-kubernetes-workshop.git",
+    ]
+  }
+}
+
 # Create the Kubernetes Master Nodes (e.g. master1)
 resource "digitalocean_droplet" "master_nodes" {
   count              = "${var.master_count}"
