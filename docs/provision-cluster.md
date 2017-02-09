@@ -13,7 +13,7 @@ $ make get-dependencies
 
 ## Kismatic-cluster.yaml changes
 
-Now update the `kismatic-cluster.yaml` in the root directory of the repo with the following changes:r
+Now update the `kismatic-cluster.yaml` in the root directory of the repo with the following changes:
 
 Add the IP address of Master1 to `ip`, `load_balanced_fqdn` and `load_balanced_short_name` below
 
