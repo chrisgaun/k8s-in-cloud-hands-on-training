@@ -2,15 +2,15 @@
 
 ## 1. Terraform
 
-Before using this repository you will need to download and install [Terraform](https://www.terraform.io/)
+To download and configure [Terraform](https://www.terraform.io/) please execute the following commands:
 
-This can be downloaded from [here](https://www.terraform.io/downloads.html)
-
-Download and place the Terraform binary in your preferred location, then tweak the command below and execute it:
+If you don't already have [brew](http://brew.sh/) installed execute:
 
 ```
-$ PATH=/usr/local/terraform/bin:<terraform location>:$PATH
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+
+Then execute `brew install terraform`
 
 ## 2. Digital Ocean account
 
