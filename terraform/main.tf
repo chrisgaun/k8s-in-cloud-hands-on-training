@@ -34,7 +34,7 @@ resource "digitalocean_droplet" "bootstrap_node" {
   }
 }
 
-# Create the Kubernetes Master Nodes (e.g. master1)
+# Create the Kubernetes master nodes (e.g. master1)
 resource "digitalocean_droplet" "master_nodes" {
   count              = "${var.master_count}"
   image              = "${var.image}"
@@ -46,7 +46,7 @@ resource "digitalocean_droplet" "master_nodes" {
   private_networking = true
 }
 
-# Create the Kubernetes Etcd Nodes (e.g. etcd1)
+# Create the Kubernetes Etcd nodes (e.g. etcd1)
 resource "digitalocean_droplet" "etcd_nodes" {
   count              = "${var.etcd_count}"
   image              = "${var.image}"
@@ -58,7 +58,7 @@ resource "digitalocean_droplet" "etcd_nodes" {
   private_networking = true
 }
 
-# Create the Kubernetes worker Nodes (e.g. worker1)
+# Create the Kubernetes worker nodes (e.g. worker1)
 resource "digitalocean_droplet" "worker_nodes" {
   count              = "${var.worker_count}"
   image              = "${var.image}"

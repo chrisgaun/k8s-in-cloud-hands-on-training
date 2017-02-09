@@ -8,7 +8,7 @@ Open a Powershell window **as Administrator** and execute the following commands
 $ Set-ExecutionPolicy unrestricted
 $ iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 $ choco install terraform -y
-$ choco install github -y
+$ choco install git.install -y
 ```
 
 ## A Digital Ocean account

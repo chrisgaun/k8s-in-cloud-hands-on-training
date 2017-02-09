@@ -14,7 +14,7 @@ A list of prerequisities for Mac can be found [here](docs/mac-prerequisities.md)
 
 ## Create Infrastructure & Provision Cluster
 
-A list of steps to build and provision the Kubernetes cluster can be found [here](docs/build-cluster.md)
+A list of steps to build and provision the Kubernetes cluster can be found [here](docs/accessing-the-bootstrap-node.md)
 
 ## Using Kubernetes
 
