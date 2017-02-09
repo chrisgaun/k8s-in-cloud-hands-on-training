@@ -6,12 +6,6 @@ get-dependencies:
 	chmod +x ./kubectl
 	sudo mv ./kubectl /usr/local/bin/kubectl
 
-plan:
-	cd terraform && terraform plan
-
-apply:
-	cd terraform && time terraform apply
-
 destroy:
 	cd terraform && terraform destroy --force
 	rm -rf ansible cfssl generated runs kismatic kubeconfig provision
