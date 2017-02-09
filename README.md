@@ -26,5 +26,5 @@ To remove the droplets from Digital Ocean execute the from your local machine.
 
 ```
 $ cd terraform
-$ terraform destroy
+$ terraform destroy --force
 ```

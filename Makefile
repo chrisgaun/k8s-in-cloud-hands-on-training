@@ -6,10 +6,6 @@ get-dependencies:
 	chmod +x ./kubectl
 	sudo mv ./kubectl /usr/local/bin/kubectl
 
-destroy:
-	cd terraform && terraform destroy --force
-	rm -rf ansible cfssl generated runs kismatic kubeconfig provision
-
 provision-cluster:
 	chmod 600 ssh/cluster.pem
 	time ./kismatic install apply -f kismatic-cluster.yaml
