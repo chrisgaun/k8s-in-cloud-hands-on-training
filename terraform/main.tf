@@ -28,10 +28,9 @@ resource "digitalocean_droplet" "bootstrap_node" {
 
   provisioner "remote-exec" {
     inline = [
-      "sudo apt-get -y update",
-      "sudo apt-get -y upgrade",
-      "sudo apt-get -y install git build-essential python2.7",
-      "git clone https://github.com/swade1987/hands-on-with-kubernetes-workshop.git",
+      "sudo apt-get -y install git build-essential",
+      "sudo apt-get install -qq python2.7 && ln -s /usr/bin/python2.7 /usr/bin/python",
+      "git clone https://github.com/swade1987/kismatic-enterprise-toolkit-sandbox.git",
     ]
   }
 }
