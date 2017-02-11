@@ -15,6 +15,14 @@ $ make get-dependencies
 
 Now update the `kismatic-cluster.yaml` in the root directory of the repo with the following changes:
 
+This can be done by executing the following command:
+
+```
+$ nano kismatic-cluster.yaml
+```
+
+Note: There **must** be space between the `:` and the ip address you enter!
+
 Add the IP address of Master1 to `ip`, `load_balanced_fqdn` and `load_balanced_short_name` below
 
 ```
