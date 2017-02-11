@@ -11,7 +11,7 @@ Open a Git Bash terminal and browse to the location of the repository of your lo
 Once you are in the directory execute the following commands changing `<bootstrap-node ip>` to the IP address of the node in Digital Ocean:
 
 ```
-$ chmod 600 ../ssh/cluster.pem
+$ chmod 600 ssh/cluster.pem
 $ ssh -i ssh/cluster.pem root@<bootstrap-node ip>
 ```
 
