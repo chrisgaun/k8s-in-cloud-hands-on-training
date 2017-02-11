@@ -16,7 +16,6 @@ $ terraform plan
 To apply the changes execute the following commands:
 
 ```
-$ cd terraform
 $ terraform apply
 ```
 
