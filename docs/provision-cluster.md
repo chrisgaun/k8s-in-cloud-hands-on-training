@@ -44,3 +44,14 @@ Once you have updated the `kismatic-cluster.yaml` file execute the following com
 ```
 $ make provision-cluster
 ```
+
+## Setup default kubeconfig
+
+Once the cluster has been provisioned execute the following commands:
+
+```
+$ mkdir ~/.kube/
+$ cp kubeconfig ~/.kube/config
+```
+
+To validate all is well execute `kubectl get nodes` and the Master and Worker nodes should show.
