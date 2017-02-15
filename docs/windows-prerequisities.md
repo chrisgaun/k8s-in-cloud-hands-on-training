@@ -11,6 +11,10 @@ $ choco install terraform -y
 $ choco install git.install -y
 ```
 
+## Pageant
+
+Download and install Pageant (an SSH authentication agent) from [here](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+
 ## A Digital Ocean account
 
 You will also require an account on [https://www.digitalocean.com/](https://www.digitalocean.com/)
