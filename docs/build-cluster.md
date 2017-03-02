@@ -9,6 +9,7 @@ To see the changes which are going to be made execute the following commands:
 Note: You will need to paste in the Digital Ocean Token during the Terraform execution.
 
 ```
+$ make generate-ssh-keys
 $ cd terraform
 $ terraform plan
 ```
