@@ -1,6 +1,7 @@
 KISMATIC_VERSION=1.2.1
 
 generate-ssh-keys:
+	mkdir ssh
 	ssh-keygen -t rsa -f ssh/cluster.pem -N ""
 
 get-dependencies:
