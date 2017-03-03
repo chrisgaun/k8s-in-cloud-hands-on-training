@@ -1,8 +1,7 @@
-KISMATIC_VERSION=1.2.1
+KISMATIC_VERSION=1.3.0-alpha.0
 
 generate-ssh-keys:
-	mkdir ssh
-	ssh-keygen -t rsa -f ssh/cluster.pem -N ""
+	mkdir ssh && cd ssh && ssh-keygen -t rsa -b 4096 -C "" -f cluster.pem -N ""
 
 get-dependencies:
 	wget --no-check-certificate -O - https://github.com/apprenda/kismatic/releases/download/v$(KISMATIC_VERSION)/kismatic-v$(KISMATIC_VERSION)-linux-amd64.tar.gz | tar -zx
