@@ -15,6 +15,7 @@ Then execute the following commands:
 ```
 $ brew tap unofficial-cask/hashicorp-tap https://github.com/unofficial-cask/hashicorp-tap.git
 $ brew cask install terraform
+$ git clone https://github.com/swade1987/hands-on-with-kubernetes-workshop.git
 ```
 
 ## 2. Digital Ocean account
