@@ -1,6 +1,12 @@
 # Build the Kubernetes cluster
 
-## 1. Create Infrastructure
+## 1. Changing cluster node location
+
+It is possible to change the physical location of the nodes created within Digital Ocean.
+
+This is possible by changing the `region` variable within `/terraform/variables.tf`
+
+## 2. Create Infrastructure
 
 Before executing Terraform you need to obtain your Digital Ocean token [here](https://cloud.digitalocean.com/settings/api/tokens)
 
