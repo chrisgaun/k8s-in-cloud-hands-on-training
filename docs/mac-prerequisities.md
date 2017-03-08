@@ -10,7 +10,12 @@ If you don't already have [brew](http://brew.sh/) installed execute:
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Then execute `brew install terraform`
+Then execute the following commands:
+
+```
+$ brew tap unofficial-cask/hashicorp-tap https://github.com/unofficial-cask/hashicorp-tap.git
+$ brew cask install terraform
+```
 
 ## 2. Digital Ocean account
 
