@@ -28,6 +28,9 @@ resource "digitalocean_droplet" "bootstrap_node" {
 
   provisioner "remote-exec" {
     inline = [
+      "sudo apt-get clean && sudo mv /var/lib/apt/lists /var/lib/apt/lists.broke && sudo mkdir -p /var/lib/apt/lists/partial",
+      "sudo apt-get update",
+      "sudo apt-get -y upgrade",
       "sudo apt-get -y install git build-essential",
       "sudo apt-get install -qq python2.7 && ln -s /usr/bin/python2.7 /usr/bin/python",
       "git clone https://github.com/swade1987/hands-on-with-kubernetes-workshop.git",
