@@ -2,11 +2,23 @@
 
 ## Terraform
 
-Open a Powershell window **as Administrator** and execute the following commands:
+Open a Powershell window **as Administrator** and execute `Set-ExecutionPolicy unrestricted`
+
+If you are running PowerShell v2 execute the following command:
 
 ```
-$ Set-ExecutionPolicy unrestricted
+$ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+
+If you are running PowerShell v3 execute the following command:
+
+```
 $ iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
+```
+
+Once Chocolatey is installed execute the following commands:
+
+```
 $ choco install terraform -y
 $ choco install git.install -y
 ```
