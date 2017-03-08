@@ -1,4 +1,4 @@
-KISMATIC_VERSION=1.3.0-alpha.0
+KISMATIC_VERSION=1.2.2
 
 get-dependencies:
 	wget --no-check-certificate -O - https://github.com/apprenda/kismatic/releases/download/v$(KISMATIC_VERSION)/kismatic-v$(KISMATIC_VERSION)-linux-amd64.tar.gz | tar -zx
