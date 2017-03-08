@@ -4,13 +4,19 @@
 
 Open a Powershell window **as Administrator** and execute `Set-ExecutionPolicy unrestricted`
 
+To locate the version of PowerShell you are running execute the following command:
+
+```
+$ $PSVersionTable.PSVersion
+```
+
 If you are running PowerShell v2 execute the following command:
 
 ```
 $ iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
-If you are running PowerShell v3 execute the following command:
+If you are running PowerShell v3 or above execute the following command:
 
 ```
 $ iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
