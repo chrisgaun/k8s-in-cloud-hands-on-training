@@ -1,6 +1,6 @@
 # Prerequisities for Windows users
 
-## Terraform
+## 1. Terraform
 
 Open a Powershell window **as Administrator** and execute `Set-ExecutionPolicy unrestricted`
 
@@ -30,10 +30,14 @@ $ choco install git.install -y
 $ git clone https://github.com/swade1987/hands-on-with-kubernetes-workshop.git
 ```
 
-## Pageant
+## 2. Pageant
 
 Download and install Pageant (an SSH authentication agent) from [here](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
-## A Digital Ocean account
+## 3. Clone the repo
+
+Now clone the repo by executing `git clone https://github.com/swade1987/hands-on-with-kubernetes-workshop.git`
+
+## 4. Digital Ocean account
 
 You will also require an account on [https://www.digitalocean.com/](https://www.digitalocean.com/)
