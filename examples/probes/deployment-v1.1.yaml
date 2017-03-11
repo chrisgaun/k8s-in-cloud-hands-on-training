@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: probes-demo
-        image: quay.io/swade1987/k8s-workshop-site:1.1
+        image: quay.io/swade1987/k8s-workshop-probes:1.1
         livenessProbe:
           httpGet:
             path: /healthz
