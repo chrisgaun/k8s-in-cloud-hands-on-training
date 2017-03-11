@@ -23,7 +23,7 @@ variable image {
 
 variable cluster_tag {
   description = "A unique tag for the cluster"
-  default     = "kismatic-demo-cluster"
+  default     = "hands-on-kubernetes-workshop"
 }
 
 variable droplet_size {
