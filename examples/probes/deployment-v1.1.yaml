@@ -27,14 +27,14 @@ spec:
         image: quay.io/swade1987/k8s-workshop-site:1.1
         livenessProbe:
           httpGet:
-            path: /
-            port: 8080
+            path: /healthz
+            port: 80
           initialDelaySeconds: 30
           timeoutSeconds: 10
         readinessProbe:
           httpGet:
-            path: /
-            port: 8080
+            path: /healthz
+            port: 80
           initialDelaySeconds: 30
           timeoutSeconds: 10
         resources:
