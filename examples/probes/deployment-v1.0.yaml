@@ -13,7 +13,8 @@ spec:
     type: RollingUpdate
   minReadySeconds: 30
   selector:
-    app: probes-demo
+    matchLabels:
+      app: probes-demo
   template:
     metadata:
       labels:

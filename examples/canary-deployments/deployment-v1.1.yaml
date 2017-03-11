@@ -13,7 +13,8 @@ spec:
     type: RollingUpdate
   minReadySeconds: 30
   selector:
-    app: k8s-workshop-site
+    matchLabels:
+      app: k8s-workshop-site
   template:
     metadata:
       labels:
