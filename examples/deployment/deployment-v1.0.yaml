@@ -12,6 +12,10 @@ spec:
       maxUnavailable: 1
     type: RollingUpdate
   minReadySeconds: 30
+  selector:
+    app: k8s-workshop-site
+    version: "1.0"
+    tier: frontend
   template:
     metadata:
       labels:
