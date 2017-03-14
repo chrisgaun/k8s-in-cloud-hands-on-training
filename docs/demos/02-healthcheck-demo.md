@@ -34,7 +34,7 @@ probes-demo-1216114202-wv5jx   0/1       Running   0          13s       172.16.2
 
 ## 4. Browse to the Kubernetes Dashboard
 
-To obtain the Master node IP address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop?i=81db1d)
+To obtain the Master node IP address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop)
 
 Now browse to `https://<master ip>:6443/ui`. E.g. `https://178.62.115.83:6443/ui`
 
@@ -64,7 +64,7 @@ probes-demo   172.17.120.67   <nodes>       80:30226/TCP   1m
 
 ## 6. Obtain the IP addresses of the worker node in Digital Ocean
 
-To obtain the worker node Ip address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop?i=81db1d)
+To obtain the worker node Ip address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop)
 
 ## 7. Browse to version 1.0 of the website
 

@@ -38,7 +38,7 @@ kubernetes          172.17.0.1       <none>        443/TCP        7m
 
 ## 5. Obtain the IP addresses of the worker node in Digital Ocean
 
-To obtain the worker node Ip address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop?i=81db1d)
+To obtain the worker node Ip address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop)
 
 ## 6. Browse to version 1.0 of the website
 
