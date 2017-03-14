@@ -11,6 +11,10 @@ $ cd hands-on-with-kubernetes-workshop
 $ make get-dependencies
 ```
 
+## Obtain the list of IP addresses
+
+All IP addresses used for the following steps can be found [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop)**
+
 ## Kismatic-cluster.yaml changes
 
 Now update the `kismatic-cluster.yaml` in the root directory of the repo with the following changes:
@@ -45,13 +49,13 @@ Once you have updated the `kismatic-cluster.yaml` file execute the following com
 $ make provision-cluster
 ```
 
-## Setup default kubeconfig
+To validate all is well execute `kubectl get nodes`
 
-Once the cluster has been provisioned execute the following commands:
+You should be shown:
 
 ```
-$ mkdir ~/.kube/
-$ cp kubeconfig ~/.kube/config
+NAME       STATUS                     AGE
+ingress1   Ready,SchedulingDisabled   1h
+master1    Ready,SchedulingDisabled   1h
+worker1    Ready                      1h
 ```
-
-To validate all is well execute `kubectl get nodes` and the Master and Worker nodes should show.

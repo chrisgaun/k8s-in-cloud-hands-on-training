@@ -13,7 +13,7 @@ variable "digital_ocean_token" {
 # Bangalore - blr1
 variable region {
   description = "Region to launch in"
-  default     = "tor1"
+  default     = "lon1"
 }
 
 variable image {
@@ -23,7 +23,7 @@ variable image {
 
 variable cluster_tag {
   description = "A unique tag for the cluster"
-  default     = "kismatic-demo-cluster"
+  default     = "hands-on-kubernetes-workshop"
 }
 
 variable droplet_size {
@@ -48,10 +48,5 @@ variable worker_count {
 
 variable ingress_count {
   description = "Number of k8s ingress droplets"
-  default     = 0
-}
-
-variable storage_count {
-  description = "Number of k8s storage droplets"
-  default     = 0
+  default     = 1
 }
