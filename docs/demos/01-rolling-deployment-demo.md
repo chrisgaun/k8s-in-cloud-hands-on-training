@@ -1,4 +1,4 @@
-# Canary Deployment Demo Workflow
+# Rolling Deployment Demo Workflow
 
 These steps are to be executed from the boostrap node itself!
 
@@ -11,8 +11,8 @@ $ cd /root/hands-on-with-kubernetes-workshop
 ## 2. Execute the Kubernetes service and first deployment
 
 ```
-$ kubectl apply -f examples/canary-deployments/service.yaml
-$ kubectl apply -f examples/canary-deployments/deployment-v1.0.yaml
+$ kubectl apply -f examples/rolling-deployment/service.yaml
+$ kubectl apply -f examples/rolling-deployment/deployment-v1.0.yaml
 ```
 
 ## 3. Display the pods running which are serving our application
@@ -55,7 +55,7 @@ You should now see "version 1.0" displayed on the webpage.
 Execute the following command from the bootstrap node:
 
 ```
-$ kubectl apply -f examples/canary-deployments/deployment-v1.1.yaml
+$ kubectl apply -f examples/rolling-deployment/deployment-v1.1.yaml
 ```
 
 Now if we check the pods currently running we should see v1.1 of the application is coming online:
@@ -85,6 +85,6 @@ That means the rolling deployment has been successfully completed.
 Finally execute the following command to tidy away the demo:
 
 ```
-$ kubectl delete -f examples/canary-deployments/service.yaml
-$ kubectl delete -f examples/canary-deployments/deployment-v1.1.yaml
+$ kubectl delete -f examples/rolling-deployment/service.yaml
+$ kubectl delete -f examples/rolling-deployment/deployment-v1.1.yaml
 ```
