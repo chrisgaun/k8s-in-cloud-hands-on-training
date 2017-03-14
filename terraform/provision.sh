@@ -10,4 +10,4 @@ sudo apt-get install -qq python2.7 && ln -s /usr/bin/python2.7 /usr/bin/python
 sudo apt-get update -y
 
 echo "Clone the repo"
-git clone https://github.com/swade1987/hands-on-with-kubernetes-workshop.git
+git clone https://github.com/apprenda/hands-on-with-kubernetes-workshop.git
