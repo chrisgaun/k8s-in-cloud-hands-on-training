@@ -10,3 +10,5 @@ provision-cluster:
 	chmod 600 ssh/cluster.pem
 	time ./kismatic install apply -f kismatic-cluster.yaml
 	cp generated/kubeconfig .
+	mkdir ~/.kube/
+	cp kubeconfig ~/.kube/config
