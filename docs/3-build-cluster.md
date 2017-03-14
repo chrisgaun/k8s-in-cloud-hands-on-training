@@ -27,4 +27,4 @@ $ terraform apply
 
 ## 2. Provisioning the Kubernetes cluster using Kismatic
 
-To provision the cluster follow the steps [here](accessing-the-bootstrap-node.md)
+To provision the cluster follow the steps [here](4-accessing-the-bootstrap-node.md)

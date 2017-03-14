@@ -28,4 +28,4 @@ $ chmod 600 ssh/cluster.pem
 $ ssh -i ssh/cluster.pem root@<bootstrap-node ip>
 ```
 
-To provision the cluster click [here](provision-cluster.md)
+To provision the cluster click [here](5-provision-cluster.md)

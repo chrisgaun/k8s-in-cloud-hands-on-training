@@ -8,13 +8,13 @@ The following repository will create you a Kubernetes cluster using the followin
 
 ## Prerequisities
 
-A list of prerequisities for Windows can be found [here](docs/windows-prerequisities.md)
+A list of prerequisities for Windows can be found [here](docs/1-windows-prerequisities.md)
 
-A list of prerequisities for Mac can be found [here](docs/mac-prerequisities.md)
+A list of prerequisities for Mac can be found [here](docs/2-mac-prerequisities.md)
 
 ## Create Infrastructure & Provision Cluster
 
-A list of steps to build and provision the Kubernetes cluster can be found [here](docs/build-cluster.md)
+A list of steps to build and provision the Kubernetes cluster can be found [here](docs/3-build-cluster.md)
 
 ## Using Kubernetes
 
