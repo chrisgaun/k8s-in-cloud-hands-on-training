@@ -10,7 +10,9 @@ Open a Git Bash terminal and browse to the location of the repository of your lo
 
 Once you are in the directory execute the following commands
 
-Change `<bootstrap-node ip>` to the IP address of the node in Digital Ocean:
+Change `<bootstrap-node ip>` to the IP address of the node in Digital Ocean
+
+The IP address can be found here [https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop)
 
 ```
 $ chmod 600 ssh/cluster.pem

@@ -11,6 +11,10 @@ $ cd hands-on-with-kubernetes-workshop
 $ make get-dependencies
 ```
 
+## Obtain the list of IP addresses
+
+All IP addresses used for the following steps can be found [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop)**
+
 ## Kismatic-cluster.yaml changes
 
 Now update the `kismatic-cluster.yaml` in the root directory of the repo with the following changes:
