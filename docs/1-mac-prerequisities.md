@@ -14,7 +14,7 @@ Then execute the following commands:
 
 ```
 $ brew tap unofficial-cask/hashicorp-tap https://github.com/unofficial-cask/hashicorp-tap.git
-$ brew cask install terraform
+$ brew install cask terraform
 ```
 
 ## 2. Clone the repo
