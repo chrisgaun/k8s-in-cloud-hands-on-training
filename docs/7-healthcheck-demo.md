@@ -17,12 +17,19 @@ $ kubectl apply -f examples/healthcheck/healthy-deployment.yaml
 
 ## 3. Display the pods running which are serving our application
 
+Execute the following command:
+
 ```
-root@bootstrap-node:~/hands-on-with-kubernetes-workshop# kubectl get pods -o wide
-NAME                                 READY     STATUS    RESTARTS   AGE       IP               NODE
-k8s-workshop-site-1982099918-00k1p   1/1       Running   0          45s       172.16.235.206   worker1
-k8s-workshop-site-1982099918-2nk7m   1/1       Running   0          45s       172.16.235.207   worker1
-k8s-workshop-site-1982099918-kxdlc   1/1       Running   0          45s       172.16.235.205   worker1
+$ kubectl get pods -o wide
+```
+
+You should now see
+
+```
+NAME                           READY     STATUS    RESTARTS   AGE       IP               NODE
+probes-demo-1216114202-fkbjn   0/1       Running   0          13s       172.16.235.211   worker1
+probes-demo-1216114202-jl08v   0/1       Running   0          13s       172.16.235.212   worker1
+probes-demo-1216114202-wv5jx   0/1       Running   0          13s       172.16.235.210   worker1
 ```
 
 ## 4. Browse to the Kubernetes Dashboard
@@ -50,9 +57,9 @@ You should now be seeing:
 
 ```
 root@bootstrap-node:~/hands-on-with-kubernetes-workshop# kubectl get services
-NAME                CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
-k8s-workshop-site   172.17.149.128   <nodes>       80:32233/TCP   13s
-kubernetes          172.17.0.1       <none>        443/TCP        7m
+NAME          CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+kubernetes    172.17.0.1      <none>        443/TCP        1h
+probes-demo   172.17.120.67   <nodes>       80:30226/TCP   1m
 ```
 
 ## 6. Obtain the IP addresses of the worker node in Digital Ocean
@@ -63,9 +70,9 @@ To obtain the worker node Ip address browse [here](https://cloud.digitalocean.co
 
 Now from your browser browse to `http://<worker ip>:nodePort`
 
-In our instance it would be `http://<worker ip>:32233`
+In our instance it would be `http://<worker ip>:30226`
 
-Note: Port `32233` is shown as being the NodePort used after we executed `kubectl get services` above.
+Note: Port `30226` is shown as being the NodePort used after we executed `kubectl get services` above.
 
 You should now see "version 1.0" displayed on the webpage.
 
