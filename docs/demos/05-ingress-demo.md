@@ -28,7 +28,7 @@ k8s-workshop-ingress   172.17.150.221   <nodes>       80:32691/TCP   7s
 kubernetes             172.17.0.1       <none>        443/TCP        1h
 ```
 
-To obtain the worker node Ip address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop?i=81db1d)
+To obtain the worker node Ip address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop)
 
 Now from your browser browse to `http://<worker ip>:nodePort`
 

@@ -49,7 +49,7 @@ $ kubectl scale deployment resource-quota-demo --replicas=10
 
 ## 6. Check the number of pods in the Kubernetes Dashboard
 
-To obtain the Master node IP address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop?i=81db1d)
+To obtain the Master node IP address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop?)
 
 Now browse to `https://<master ip>:6443/ui`. E.g. `https://178.62.115.83:6443/ui`
 
