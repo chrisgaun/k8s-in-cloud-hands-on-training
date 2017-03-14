@@ -72,9 +72,13 @@ k8s-workshop-site-1641828995-jjgtc   0/1       ContainerCreating   0          3s
 
 ## 7. Browse to version 1.1 of the website
 
-If we browse to `http://<worker ip>:32233` again and keep refreshing the browser you will see `version: 1.0` and `version: 1.1`
+If we browse to `http://<worker ip>:32233` again.
 
-Eventually you will only be able to see `version: 1.1` that means the rolling deployment has been successfully completed.
+Now keep refreshing the browser you will see `version: 1.0` and `version: 1.1`
+
+Eventually you will only be able to see `version: 1.1`.
+
+That means the rolling deployment has been successfully completed.
 
 ## 8. Delete the demo
 
