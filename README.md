@@ -20,9 +20,9 @@ A list of steps to build and provision the Kubernetes cluster can be found [here
 
 The presenter will go through a list of `kubectl` commands during the workshop.
 
-## Destroying everything once finished.
+## Destroying everything once finished
 
-To remove the droplets from Digital Ocean execute the from your local machine.
+To remove the droplets from Digital Ocean execute the following from your local machine.
 
 ```
 $ cd terraform
