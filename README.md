@@ -18,7 +18,7 @@ A list of steps to build and provision the Kubernetes cluster can be found [here
 
 ## Using Kubernetes
 
-The presenter will go through a list of `kubectl` commands during the workshop.
+The presenter will go through a list of demos during the workshop.
 
 ## Destroying everything once finished
 
