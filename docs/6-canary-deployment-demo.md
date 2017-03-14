@@ -85,5 +85,6 @@ That means the rolling deployment has been successfully completed.
 Finally execute the following command to tidy away the demo:
 
 ```
-$ kubectl delete -f examples/canary-deployments
+$ kubectl delete -f examples/canary-deployments/service.yaml
+$ kubectl delete -f examples/canary-deployments/deployment-v1.1.yaml
 ```
