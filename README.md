@@ -27,6 +27,11 @@ The presenter will go through a list of demos during the workshop.
 To remove the Kubernetes cluster and underlining infrastructure execute the following from your local machine.
 
 ```
-$
+$ gcloud container clusters delete [NAME OF CLUSTER] --zone "[ZONE]"
 
+```
+If you used the standard command in this workshop to start the cluster than copy and paste the following:
+
+```
+$ gcloud container clusters delete k8strainingcluster --zone "us-west1-a"
 ```
