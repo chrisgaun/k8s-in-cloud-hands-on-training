@@ -40,6 +40,6 @@ You will still have roughly $300 in Google Cloud credits you can use to test out
 
 ## Reference
 
-Joining the Kubernetes community
+Join the Kubernetes community [here]() 
 
 The Google SDK Container commands are found [here](https://cloud.google.com/sdk/gcloud/reference/container/)
