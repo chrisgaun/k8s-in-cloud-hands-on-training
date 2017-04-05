@@ -10,7 +10,7 @@ The following repository will create you a Kubernetes cluster using the followin
 
 ## Course Documents
 
-Join course Slack [here](http://54.242.94.98/). 
+Join the course's Slack [here](http://54.242.94.98/). 
 
 You will find the presentation, links, commands and group questions pinned in the #k8satgoogle channel on Slack [here](https://kismatic.slack.com/messages/C4V9PELKG/)
 
