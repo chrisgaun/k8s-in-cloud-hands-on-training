@@ -49,7 +49,7 @@ kubectl proxy
 Open the Dashboard in browswer with the following IP address
 
 ```
-127.0.0.1:8001
+127.0.0.1:8001/ui
 ```
 
 ## 4. Close the Dashboard
