@@ -22,7 +22,9 @@ A list of steps to build and provision the Kubernetes cluster can be found [here
 
 The presenter will go through a list of demos during the workshop.
 
-## Destroying everything once finished
+## Destroying Cluster After Training
+
+Congrats on finishing the hands on introducting to Kubernetes!
 
 To remove the Kubernetes cluster and underlining infrastructure execute the following from your local machine.
 
@@ -34,3 +36,4 @@ If you used the standard command in this workshop to start the cluster than copy
 ```
 $ gcloud container clusters delete k8strainingcluster --zone "us-west1-a"
 ```
+You will still have roughly $300 in Google Cloud credits you can use to test out Kubernetes more. 
