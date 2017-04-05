@@ -1,22 +1,23 @@
 # Build the Kubernetes cluster
 
-## 1. Changing cluster node location
+## 1. Sign into Google Cloud 
 
-It is possible to change the physical location of the nodes created within Digital Ocean.
+Sign into your Google Cloud account (need Google SDK [here](https://cloud.google.com/sdk/))
 
-This is possible by changing the `region` variable within `/terraform/variables.tf`
+The following command will open up window to authenticate using your email associated with the account. 
+
+```
+$ gcloud auth login 
+```
 
 ## 2. Create Infrastructure
 
-Before executing Terraform you need to obtain your Digital Ocean token [here](https://cloud.digitalocean.com/settings/api/tokens)
-
-To see the changes which are going to be made execute the following commands:
+Sing into the 
 
 Note: You will need to paste in the Digital Ocean Token during the Terraform execution.
 
 ```
-$ cd terraform
-$ terraform plan
+$ gcloud container --project "apprenda-project-one" clusters create "k8strainingcluster" --zone "us-west1-a" --machine-type "n1-standard-1" --image-type "GCI" --disk-size "100" --scopes "https://www.googleapis.com/auth/compute","https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --num-nodes "3" --network "default" --no-enable-cloud-logging --no-enable-cloud-monitoring --enable-autoupgrade
 ```
 
 To apply the changes execute the following commands:
