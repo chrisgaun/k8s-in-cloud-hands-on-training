@@ -2,7 +2,7 @@
 
 The following repository will create you a Kubernetes cluster using the following:
 
-1. A Google Cloud account:
+1. Sign up for a Google Cloud account:
     1. FREE TRIAL: $300 of Google Cloud for 12 months https://cloud.google.com/free/ 
     2. FREE KUBERNETES TIER: up to 5 nodes of Google Container Engine (GKE) are free. Note the underlining Google Compute Engine counts towards the $300 from the FREE TRIAL.    
 2. Download Google SDK for Mac, Linux or Windows: https://cloud.google.com/sdk/downloads 
