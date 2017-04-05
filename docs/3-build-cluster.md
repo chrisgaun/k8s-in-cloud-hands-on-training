@@ -20,12 +20,10 @@ Note: You will need to paste in the Digital Ocean Token during the Terraform exe
 $ gcloud container --project "apprenda-project-one" clusters create "k8strainingcluster" --zone "us-west1-a" --machine-type "n1-standard-1" --image-type "GCI" --disk-size "100" --scopes "https://www.googleapis.com/auth/compute","https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --num-nodes "3" --network "default" --no-enable-cloud-logging --no-enable-cloud-monitoring --enable-autoupgrade
 ```
 
-To apply the changes execute the following commands:
+## 3.Install kubectl - the Kubernetes command line
+
+Run the following command
 
 ```
-$ terraform apply
+gcloud components install kubectl
 ```
-
-## 2. Provisioning the Kubernetes cluster using Kismatic
-
-To provision the cluster follow the steps [here](4-accessing-the-bootstrap-node.md)
