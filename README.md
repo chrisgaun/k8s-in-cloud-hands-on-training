@@ -28,7 +28,6 @@ To remove the Kubernetes cluster and underlining infrastructure execute the foll
 
 ```
 $ gcloud container clusters delete [NAME OF CLUSTER] --zone "[ZONE]"
-
 ```
 If you used the standard command in this workshop to start the cluster than copy and paste the following:
 
