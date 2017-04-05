@@ -24,9 +24,9 @@ The presenter will go through a list of demos during the workshop.
 
 ## Destroying everything once finished
 
-To remove the droplets from Digital Ocean execute the following from your local machine.
+To remove the Kubernetes cluster and underlining infrastructure execute the following from your local machine.
 
 ```
-$ cd terraform
-$ terraform destroy --force
+$
+
 ```
