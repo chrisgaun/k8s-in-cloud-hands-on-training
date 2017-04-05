@@ -37,3 +37,9 @@ If you used the standard command in this workshop to start the cluster than copy
 $ gcloud container clusters delete k8strainingcluster --zone "us-west1-a"
 ```
 You will still have roughly $300 in Google Cloud credits you can use to test out Kubernetes more. 
+
+## Reference
+
+Joining the Kubernetes community
+
+The Google SDK Container commands are found [here](https://cloud.google.com/sdk/gcloud/reference/container/)
