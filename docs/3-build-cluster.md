@@ -52,4 +52,6 @@ Open the Dashboard in browswer with the following IP address
 127.0.0.1:8001
 ```
 
-## 4. - the Kubernetes command line
+## 4. - Close the Dashboard
+
+To continue to use the CLI, you need to close the Dashboard. 
