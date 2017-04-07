@@ -12,9 +12,7 @@ $ gcloud auth login
 
 ## 2. Provision Cluster
 
-Sign into the
-
-Note: You will need to paste in the Digital Ocean Token during the Terraform execution.
+The following command will create a new 3-node cluster
 
 ```
 $ gcloud container --project "apprenda-project-one" clusters create "k8strainingcluster" --zone "us-west1-a" --machine-type "n1-standard-1" --image-type "GCI" --disk-size "100" --scopes "https://www.googleapis.com/auth/compute","https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --num-nodes "3" --network "default" --enable-cloud-logging --enable-cloud-monitoring --enable-autoupgrade
@@ -22,7 +20,7 @@ $ gcloud container --project "apprenda-project-one" clusters create "k8straining
 
 ## 3. Connect with Cluster
 
-Install kuebctl
+Install kubectl
 
 ```
 gcloud components install kubectl
@@ -34,10 +32,16 @@ Get credentials
 gcloud auth application-default login
 ```
 
-Configure kubectl
+Configure kubectl with the training cluster context
 
 ```
 gcloud container clusters get-credentials k8strainingcluster --zone us-west1-a --project apprenda-project-one
+```
+
+Verify kubectl can connect to the cluster
+
+```
+kubectl cluster-info
 ```
 
 Start proxy to connect to the Kubernetes cluster
