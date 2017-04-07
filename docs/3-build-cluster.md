@@ -52,6 +52,6 @@ Open the Dashboard in browser with the following IP URL
 127.0.0.1:8001/ui
 ```
 
-## 4. Close the Dashboard
+## 4. Close the Dashboard or Open New Command Line
 
 To continue to use the CLI, you need to close the Dashboard. *Or, you can open a new terminal window and leave the proxy running*
