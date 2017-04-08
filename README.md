@@ -47,3 +47,5 @@ Learn Why CTO's and Developers are Choosing Kubernetes [here](https://apprenda.c
 Join the Kubernetes community [here](https://github.com/chrisgaun/GKE-hands-on-training/blob/master/community.md)
 
 The Google SDK Container commands are found [here](https://cloud.google.com/sdk/gcloud/reference/container/)
+
+***Kubernetes command line (Kubectl) cheat sheet*** [here](https://kubernetes.io/docs/user-guide/kubectl-cheatsheet/) 
