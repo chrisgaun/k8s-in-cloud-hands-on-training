@@ -22,6 +22,8 @@ A list of steps to build and provision the Kubernetes cluster can be found [here
 
 The presenter will go through a list of demos during the workshop.
 
+Find the demos [here](https://github.com/chrisgaun/GKE-hands-on-training/tree/master/docs/demos)
+
 ## Destroying Cluster After Training
 
 Congrats on finishing the hands on introducting to Kubernetes!
