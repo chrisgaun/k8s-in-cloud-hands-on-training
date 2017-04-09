@@ -9,7 +9,7 @@ git clone https://github.com/apprenda/kdemo.git
 cd kdemo
 ```
 
-Inside the kdemo project directory there‚Äôs a `kubernetes/` folder with a few yaml files you can use to create the different resources for a demo.
+Inside the kdemo project directory there's a `kubernetes/` folder with a few yaml files you can use to create the different resources for a demo.
 
 ## For a stadard (amd64) K8s cluster ##
 
