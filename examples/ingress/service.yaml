@@ -5,6 +5,8 @@ metadata:
 spec:
   selector:
     app: k8s-workshop-ingress
-  ports:
-  - port: 80
-  type: NodePort
+ ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
