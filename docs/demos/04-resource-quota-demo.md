@@ -47,26 +47,21 @@ resource-quota-demo   3         3         3            3           1m
 
 ## 5. Scale the deployment to something silly
 
+Create 100 replicas of this crappy app!
+
 ```
-$ kubectl scale deployment resource-quota-demo --replicas=10
+$ kubectl scale deployment resource-quota-demo --replicas=100
 ```
 
 ## 6. Check the number of pods in the Kubernetes Dashboard
 
-To obtain the Master node IP address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop)
-
-Now browse to `https://<master ip>:6443/ui`. E.g. `https://178.62.115.83:6443/ui`
-
-The username and password are as follows:
-
-Username: admin
-Password: DeSletankiwom5784
+If you closed the Kuberentes Dashboard, follow the instructions to open Dashboard [here](https://github.com/chrisgaun/GKE-hands-on-training/blob/master/docs/3-build-cluster.md)
 
 Now click on `pods` from the left hand navigation menu.
 
-You should see eight healthy pods (with green ticks next to them)
+You should see healthy pods (with green ticks next to them)
 
-However you should see 2 displaying the following:
+However you should see many pods displaying the following:
 
 ```
 pod (resource-quota-demo-4067652524-jxlrw) failed to fit in any node fit failure summary on nodes : Insufficient cpu (1), Insufficient memory (1)
@@ -80,7 +75,12 @@ We can also see the information by describing the deployment using:
 $ kubectl describe deployment resource-quota-demo
 ```
 
-You will see the section: `Replicas: 10 updated | 10 total | 8 available | 2 unavailable`
+You will see the section: 
+
+```
+Type         Status    Reason
+Available    false     MinimumReplicasUnavailable 
+```
 
 ## 8. Scale down the replica count
 
