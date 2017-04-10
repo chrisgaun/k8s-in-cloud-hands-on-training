@@ -64,7 +64,11 @@ Open the Dashboard in browser with the following IP URL
 127.0.0.1:8001/ui
 ```
 
-Would accessing the Dashboard be the same on other instances of Kubernetes - e.g. not public cloud? Yes, but you can also access the Dashboard in other ways, including https://<IP of master node>/ui
+Would accessing the Dashboard be the same on other instances of Kubernetes - e.g. not public cloud? Yes, but you can also access the Dashboard in other ways, including 
+
+```
+https://<IP of master node>/ui"
+```
 
 ## 4. Open New Command Line
 
