@@ -17,12 +17,12 @@ $ kubectl apply -f examples/rolling-deployment/deployment-v1.0.yaml
 ## 3. Display the pods
 
 ```
-kubectl get deployments k8s-workshop-site
+$ kubectl get deployments k8s-workshop-site
 ```
 Decribe the deployment
 
 ```
-kubectl describe deployments k8s-workshop-site
+$ kubectl describe deployments k8s-workshop-site
 ```
 See all the pods running on the cluster
 
@@ -33,7 +33,7 @@ $ kubectl get pods -o wide
 ## 4. Create a Services with an external endpoint that we can access
 
 ```
-kubectl expose deployment k8s-workshop-site --type=LoadBalancer --name=k8s-workshop-site-dev
+$ kubectl expose deployment k8s-workshop-site --type=LoadBalancer --name=k8s-workshop-site-dev
 ```
 Find the port and external IP
 
@@ -49,24 +49,17 @@ NAME                CLUSTER-IP       EXTERNAL-IP            PORT(S)        AGE
 k8s-workshop-site   172.17.149.128   104.196.252.72         80:32233/TCP   13s
 ```
 
-## What if this was self-managed instance of Kubernetes: 
-
-  Obtain the IP addresses of the worker node
-
-  Now from your browser browse to `http://<worker ip>:nodePort`
-
-  In our instance it would be `http://<worker ip>:32233`
-
-  Note: Port `32233` is shown as being the NodePort used after we executed `kubectl get services` above.
-
-  You should now see "version 1.0" displayed on the webpage.
-
 ## 7. Deploy version 1.1 of the website
 
 Execute the following command from the bootstrap node:
 
 ```
 $ kubectl apply -f examples/rolling-deployment/deployment-v1.1.yaml
+```
+Check the pods that are running (either in UI or with command)
+
+```
+$ kubectl get pods -o wide
 ```
 
 Now if we check the pods currently running we should see v1.1 of the application is coming online:
@@ -83,19 +76,18 @@ k8s-workshop-site-1641828995-jjgtc   0/1       ContainerCreating   0          3s
 
 ## 7. Browse to version 1.1 of the website
 
-If we browse to `http://<worker ip>:32233` again.
-
-Now keep refreshing the browser you will see `version: 1.0` and `version: 1.1`
-
-Eventually you will only be able to see `version: 1.1`.
-
-That means the rolling deployment has been successfully completed.
+Refresh the site in the browser. You should see version 1.1.
 
 ## 8. Delete the demo
 
-Finally execute the following command to tidy away the demo:
+Delete the Service
 
 ```
-$ kubectl delete -f examples/rolling-deployment/service.yaml
+kubectl delete services k8s-workshop-site-dev
+```
+
+Finally delete the deployment
+
+```
 $ kubectl delete -f examples/rolling-deployment/deployment-v1.1.yaml
 ```
