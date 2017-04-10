@@ -47,22 +47,19 @@ You should now be seeing:
 root@bootstrap-node:~/hands-on-with-kubernetes-workshop# kubectl get services
 NAME                CLUSTER-IP       EXTERNAL-IP            PORT(S)        AGE
 k8s-workshop-site   172.17.149.128   104.196.252.72         80:32233/TCP   13s
-kubernetes          172.17.0.1       <none>                 443/TCP        7m
 ```
 
-## 5. Obtain the IP addresses of the worker node
+## What if this was self-managed instance of Kubernetes: 
 
-To obtain the worker node Ip address browse...
+  Obtain the IP addresses of the worker node
 
-## 6. Browse to version 1.0 of the website
+  Now from your browser browse to `http://<worker ip>:nodePort`
 
-Now from your browser browse to `http://<worker ip>:nodePort`
+  In our instance it would be `http://<worker ip>:32233`
 
-In our instance it would be `http://<worker ip>:32233`
+  Note: Port `32233` is shown as being the NodePort used after we executed `kubectl get services` above.
 
-Note: Port `32233` is shown as being the NodePort used after we executed `kubectl get services` above.
-
-You should now see "version 1.0" displayed on the webpage.
+  You should now see "version 1.0" displayed on the webpage.
 
 ## 7. Deploy version 1.1 of the website
 
