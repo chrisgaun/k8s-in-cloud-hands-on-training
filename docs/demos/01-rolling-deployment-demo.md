@@ -1,5 +1,9 @@
 # Rolling Deployment Demo Workflow
 
+Here we will see a standard blue-green rolling deployment where we change from an older version of an application to an updated one. 
+
+We will see two ways of creating a service so that you become familiar with kubectl and YAML. 
+
 These steps are to be executed from your local machine!
 
 ## 1. Navigate to the repository directory on your machine.  
