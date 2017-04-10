@@ -8,23 +8,37 @@ These steps are to be executed from your local machine!
 $ cd /[LOCATION YOU CLONED THIS REPO]/GKE-hands-on-training
 ```
 
-## 2. Execute the Kubernetes service and first deployment
+## 2. Execute the Kubernetes deployment first
 
 ```
-$ kubectl apply -f examples/rolling-deployment/service.yaml
 $ kubectl apply -f examples/rolling-deployment/deployment-v1.0.yaml
 ```
 
-## 3. Display the pods running which are serving our application
+## 3. Display the pods
+
+```
+kubectl get deployments k8s-workshop-site
+```
+Decribe the deployment
+
+```
+kubectl describe deployments k8s-workshop-site
+```
+See all the pods running on the cluster
 
 ```
 $ kubectl get pods -o wide
 ```
 
-## 4. Obtain the port on the worker node
+## 4. Create a Services with an external endpoint that we can access
 
 ```
-$ kubectl get services
+kubectl expose deployment k8s-workshop-site --type=LoadBalancer --name=k8s-workshop-site-dev
+```
+Find the port and external IP
+
+```
+$ kubectl get services k8s-workshop-site-dev
 ```
 
 You should now be seeing:
