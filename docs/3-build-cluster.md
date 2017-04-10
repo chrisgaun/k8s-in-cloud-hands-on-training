@@ -65,4 +65,4 @@ Open the Dashboard in browser with the following IP URL
 
 ## 4. Close the Dashboard or Open New Command Line
 
-To continue to use the CLI, you need to close the Dashboard. *Or, you can open a new terminal window and leave the proxy running*
+To continue to use the CLI, open a new command prompt with the proxy running in the other one. 
