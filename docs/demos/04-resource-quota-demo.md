@@ -1,11 +1,15 @@
 # Resource Quota Demo Workflow
 
-These steps are to be executed from the boostrap node itself!
+Kubernetes can restrict the amount of CPU and Memory for application pods. This is especially useful when Kubernetes cluster is not set to auto-scale and has contrained resources being shared by multiple teams. 
 
-## 1. Navigate to the repository directory on the server
+The revelvant Kubernetes documentation is found [here](https://kubernetes.io/docs/concepts/policy/resource-quotas/)
+
+These steps are to be executed from your local machine!
+
+## 1. Navigate to the repository directory on your machine.  
 
 ```
-$ cd /root/hands-on-with-kubernetes-workshop
+$ cd /[LOCATION YOU CLONED THIS REPO]/GKE-hands-on-training
 ```
 
 ## 2. Execute the application service and deployment
