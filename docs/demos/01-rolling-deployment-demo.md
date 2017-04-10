@@ -65,7 +65,6 @@ $ kubectl get pods -o wide
 Now if we check the pods currently running we should see v1.1 of the application is coming online:
 
 ```
-root@bootstrap-node:~/hands-on-with-kubernetes-workshop# kubectl get pods
 NAME                                 READY     STATUS              RESTARTS   AGE
 k8s-workshop-site-1412125313-c9clv   1/1       Running             0          7m
 k8s-workshop-site-1412125313-dlhsh   1/1       Terminating         0          7m
