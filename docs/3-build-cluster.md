@@ -2,6 +2,8 @@
 
 ## 1. Sign into Google Cloud
 
+Open a command shell. 
+
 Sign into your Google Cloud account (need Google SDK [here](https://cloud.google.com/sdk/))
 
 The following command will open up a browser window to authenticate using your email associated with the account.
