@@ -53,9 +53,11 @@ NAME                CLUSTER-IP       EXTERNAL-IP            PORT(S)        AGE
 k8s-workshop-site   172.17.149.128   104.196.252.72         80:32233/TCP   13s
 ```
 
+Navigate to the external-ip address with the port (104.196.252.72:80 in this example).
+
 ## 5. Deploy version 1.1 of the website
 
-Execute the following command from the bootstrap node:
+Execute the following command from your machine:
 
 ```
 $ kubectl apply -f examples/rolling-deployment/deployment-v1.1.yaml
