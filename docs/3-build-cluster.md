@@ -51,11 +51,12 @@ Verify kubectl can connect to the cluster
 kubectl cluster-info
 ```
 
-Start proxy to connect to the Kubernetes cluster
+Start proxy to connect to the Kubernetes cluster. This command authenticates you with the Kubernetes API server. 
 
 ```
 kubectl proxy
 ```
+Note you can only run the Kubernetes Dashboard (official UI) on the machine in which you run this command. It won't work on remote machine.  
 
 Open the Dashboard in browser with the following IP URL
 
@@ -63,6 +64,8 @@ Open the Dashboard in browser with the following IP URL
 127.0.0.1:8001/ui
 ```
 
-## 4. Close the Dashboard or Open New Command Line
+Would accessing the Dashboard be the same on other instances of Kubernetes - e.g. not public cloud? Yes, but you can also access the Dashboard in other ways, including https://<IP of master node>/ui
+
+## 4. Open New Command Line
 
 To continue to use the CLI, open a new command prompt with the proxy running in the other one. 
