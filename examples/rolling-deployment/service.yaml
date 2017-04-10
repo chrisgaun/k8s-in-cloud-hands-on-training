@@ -7,4 +7,4 @@ spec:
     app: k8s-workshop-site
   ports:
   - port: 80
-  type: NodePort
+  type: LoadBalancer
