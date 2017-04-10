@@ -2,10 +2,10 @@
 
 These steps are to be executed from the boostrap node itself!
 
-## 1. Navigate to the repository directory on the server
+## 1. Navigate to the repository directory on your machine.  
 
 ```
-$ cd /root/hands-on-with-kubernetes-workshop
+$ cd /[LOCATION YOU CLONED THIS REPO]/GKE-hands-on-training
 ```
 
 ## 2. Deploy the Kubernetes secret
