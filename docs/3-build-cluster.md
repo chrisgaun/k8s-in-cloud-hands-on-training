@@ -70,10 +70,19 @@ Would accessing the Dashboard be the same on other instances of Kubernetes - e.g
 https://<IP of master node>/ui"
 ```
 
-## 4. Tour of Dashboard (the official UI of Kubernetes)
+## 4. Run "Hello World"
+
+Deploy "hello world" application to get something up and running on your new cluster
+
+```
+kubectl run hello-world --replicas=5 --labels="run=load-balancer-example" --image=gcr.io/google-samples/node-hello:1.0  --port=8080
+```
+
+
+## 5. Tour of Dashboard (the official UI of Kubernetes)
 
 Instructor will give a tour of the Kubernetes Dashboard
 
-## 5. Open New Command Line
+## 6. Open New Command Line
 
 To continue to use the CLI, open a new command prompt with the proxy running in the other one. 
