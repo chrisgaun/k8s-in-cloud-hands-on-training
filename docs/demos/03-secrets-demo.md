@@ -1,6 +1,10 @@
 # Secrets Demo Workflow
 
-These steps are to be executed from the boostrap node itself!
+Secrets is a way to store sensative information in Kubernetes.
+
+The relevant Kubernetes documentation is found [here](https://kubernetes.io/docs/concepts/configuration/secret/)
+
+These steps are to be executed from your local machine! 
 
 ## 1. Navigate to the repository directory on your machine.  
 
