@@ -4,6 +4,8 @@ Here we will see a standard blue-green rolling deployment where we change from a
 
 We will see two ways of creating a service so that you become familiar with kubectl and YAML. 
 
+Relevant Kubernetes documentation is found [here](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/). Instructors will cover "Writing a Deployment Spec." 
+
 These steps are to be executed from your local machine!
 
 ## 1. Navigate to the repository directory on your machine.  
