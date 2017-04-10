@@ -6,7 +6,7 @@ Open a command shell.
 
 Sign into your Google Cloud account (need Google SDK [here](https://cloud.google.com/sdk/))
 
-The following command will open up a browser window to authenticate using your email associated with the account.
+The following command will open up a browser window to authenticate using your Gsuite account associated with the Google Cloud.
 
 ```
 $ gcloud auth login
@@ -14,10 +14,14 @@ $ gcloud auth login
 
 ## 2. Provision Cluster
 
-The following command will create a new 3-node cluster
+Find the project ID
+
+![Image of Google Cloud Dashboard](http://i.imgur.com/WRXSKt4.png)
+
+Copy the following command and replace [PROJECT ID] with your specific project ID. 
 
 ```
-$ gcloud container --project "apprenda-project-one" clusters create "k8strainingcluster" --zone "us-west1-a" --machine-type "n1-standard-1" --image-type "GCI" --disk-size "100" --scopes "https://www.googleapis.com/auth/compute","https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --num-nodes "3" --network "default" --enable-cloud-logging --enable-cloud-monitoring --enable-autoupgrade
+$ gcloud container --project [PROJECT ID] clusters create "k8strainingcluster" --zone "us-west1-a" --machine-type "n1-standard-1" --image-type "GCI" --disk-size "100" --scopes "https://www.googleapis.com/auth/compute","https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --num-nodes "3" --network "default" --enable-cloud-logging --enable-cloud-monitoring --enable-autoupgrade
 ```
 
 ## 3. Connect with Cluster
