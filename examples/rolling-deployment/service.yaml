@@ -7,6 +7,5 @@ spec:
     app: k8s-workshop-site
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8080
+      targetPort: 80
   type: LoadBalancer
