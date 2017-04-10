@@ -5,7 +5,7 @@ These steps are to be executed from your local machine!
 ## 1. Navigate to the repository directory on your machine.  
 
 ```
-$ cd /[WHEREVER CLONED THIS REPO]/GKE-hands-on-training
+$ cd /[LOCATION YOU CLONED THIS REPO]/GKE-hands-on-training
 ```
 
 ## 2. Execute the Kubernetes service and first deployment
