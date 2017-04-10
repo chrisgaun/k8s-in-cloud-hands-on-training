@@ -1,11 +1,13 @@
 # Healthcheck Demo Workflow
 
-These steps are to be executed from the boostrap node itself!
+Here we will see high availability of a site after a failed deployment.  
 
-## 1. Navigate to the repository directory on the server
+These steps are to be executed from your local machine!
+
+## 1. Navigate to the repository directory on your machine.  
 
 ```
-$ cd /root/hands-on-with-kubernetes-workshop
+$ cd /[LOCATION YOU CLONED THIS REPO]/GKE-hands-on-training
 ```
 
 ## 2. Execute the Kubernetes service and healthy deployment
@@ -34,47 +36,21 @@ probes-demo-1216114202-wv5jx   0/1       Running   0          13s       172.16.2
 
 ## 4. Browse to the Kubernetes Dashboard
 
-To obtain the Master node IP address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop)
+if you closed the Kuberentes Dashboard, follow the instructions to open Dashboard [here](https://github.com/chrisgaun/GKE-hands-on-training/blob/master/docs/3-build-cluster.md)
 
-Now browse to `https://<master ip>:6443/ui`. E.g. `https://178.62.115.83:6443/ui`
-
-The username and password are as follows:
-
-Username: admin
-Password: DeSletankiwom5784
-
-Now click on `pods` from the left hand navigation menu.
-
-You should see three healthy pods (with green ticks next to them)
-
-## 5. Obtain the port on the worker node
+## 5. Obtain the port on the worker nodeFind the port and external IP
 
 ```
-$ kubectl get services
+$ kubectl get services k8s-workshop-site-dev
 ```
 
 You should now be seeing:
 
 ```
 root@bootstrap-node:~/hands-on-with-kubernetes-workshop# kubectl get services
-NAME          CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
-kubernetes    172.17.0.1      <none>        443/TCP        1h
-probes-demo   172.17.120.67   <nodes>       80:30226/TCP   1m
+NAME                CLUSTER-IP       EXTERNAL-IP            PORT(S)        AGE
+k8s-workshop-site   172.17.149.128   104.196.252.72         80:32233/TCP   13s
 ```
-
-## 6. Obtain the IP addresses of the worker node in Digital Ocean
-
-To obtain the worker node Ip address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop)
-
-## 7. Browse to version 1.0 of the website
-
-Now from your browser browse to `http://<worker ip>:nodePort`
-
-In our instance it would be `http://<worker ip>:30226`
-
-Note: Port `30226` is shown as being the NodePort used after we executed `kubectl get services` above.
-
-You should now see "version 1.0" displayed on the webpage.
 
 ## 8. Now deploy the broken deployment
 
