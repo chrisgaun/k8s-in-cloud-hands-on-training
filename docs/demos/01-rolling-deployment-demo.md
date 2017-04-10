@@ -45,9 +45,9 @@ You should now be seeing:
 
 ```
 root@bootstrap-node:~/hands-on-with-kubernetes-workshop# kubectl get services
-NAME                CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
-k8s-workshop-site   172.17.149.128   <nodes>       80:32233/TCP   13s
-kubernetes          172.17.0.1       <none>        443/TCP        7m
+NAME                CLUSTER-IP       EXTERNAL-IP            PORT(S)        AGE
+k8s-workshop-site   172.17.149.128   104.196.252.72         80:32233/TCP   13s
+kubernetes          172.17.0.1       <none>                 443/TCP        7m
 ```
 
 ## 5. Obtain the IP addresses of the worker node
