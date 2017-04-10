@@ -70,6 +70,10 @@ Would accessing the Dashboard be the same on other instances of Kubernetes - e.g
 https://<IP of master node>/ui"
 ```
 
-## 4. Open New Command Line
+## 4. Tour of Dashboard (the official UI of Kubernetes)
+
+Instructor will give a tour of the Kubernetes Dashboard
+
+## 5. Open New Command Line
 
 To continue to use the CLI, open a new command prompt with the proxy running in the other one. 
