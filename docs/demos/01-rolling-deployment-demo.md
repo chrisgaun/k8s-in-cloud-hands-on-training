@@ -36,9 +36,9 @@ k8s-workshop-site   172.17.149.128   <nodes>       80:32233/TCP   13s
 kubernetes          172.17.0.1       <none>        443/TCP        7m
 ```
 
-## 5. Obtain the IP addresses of the worker node in Digital Ocean
+## 5. Obtain the IP addresses of the worker node
 
-To obtain the worker node Ip address browse [here](https://cloud.digitalocean.com/tags/hands-on-kubernetes-workshop)
+To obtain the worker node Ip address browse...
 
 ## 6. Browse to version 1.0 of the website
 
