@@ -39,10 +39,10 @@ Get credentials
 gcloud auth application-default login
 ```
 
-Configure kubectl with the training cluster context
+Configure kubectl with the training cluster context. Copy the command line AND REPLACE PROJECT ID with your project ID. 
 
 ```
-gcloud container clusters get-credentials k8strainingcluster --zone us-west1-a --project apprenda-project-one
+gcloud container clusters get-credentials k8strainingcluster --zone us-west1-a --project [PROJECT ID]
 ```
 
 Verify kubectl can connect to the cluster
