@@ -38,7 +38,7 @@ probes-demo-1216114202-wv5jx   0/1       Running   0          13s       172.16.2
 
 if you closed the Kuberentes Dashboard, follow the instructions to open Dashboard [here](https://github.com/chrisgaun/GKE-hands-on-training/blob/master/docs/3-build-cluster.md)
 
-## 5. Obtain the port on the worker nodeFind the port and external IP
+## 5. Find the port and external IP
 
 ```
 $ kubectl get services k8s-workshop-site-dev
@@ -62,13 +62,13 @@ $ kubectl apply -f examples/healthcheck/broken-deployment.yaml
 
 Now refresh the Kubernetes dashboard displaying the pods a few times
 
-You should start to see the warning message `Liveness probe failed: HTTP probe failed with statuscode: 404`
+You should start to see the warning message `Liveness probe failed: HTTP probe failed with statuscode: 404`  You will see that some of the pods have failed to start.
 
 ## 10. Refresh the browse displaying the website
 
 You should still see "version 1.0" displayed on the webpage.
 
-Kubernetes healthchecks have failed so version 1.1 of the website isn't healthy so no traffic is being sent to it.
+Kubernetes health checks have failed on the new pods so version 1.1 of the website isn't healthy so no traffic is being sent to it.  Kubernetes is preventing a rolling update from happening until the new pods are known to be healthy.
 
 ## 11. Delete the demo
 
